@@ -1,0 +1,6 @@
+{
+  "name": "ERNÄHRUNG BEI REFLUX - Offizielle Buchseite",
+  "description": "Der minimalistische Leitfaden für weniger Sodbrennen und ein beschwerdefreies Leben. Praktischer 30-Seiten PDF-Ratgeber mit 7-Tage-Plan.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

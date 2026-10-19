@@ -1,0 +1,92 @@
+@import "tailwindcss";
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    color: #1F241E;
+    background-color: #F7F3EB;
+  }
+}
+
+.font-serif {
+  font-family: 'Playfair Display', Georgia, serif;
+}
+
+.font-editorial {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+}
+
+/* Immersive organic mesh background */
+.mesh-bg {
+  background-color: #F8F4EC;
+  background-image: 
+    radial-gradient(at 0% 0%, rgba(200, 222, 196, 0.45) 0px, transparent 50%),
+    radial-gradient(at 100% 0%, rgba(246, 219, 178, 0.4) 0px, transparent 50%),
+    radial-gradient(at 100% 100%, rgba(214, 234, 211, 0.45) 0px, transparent 50%),
+    radial-gradient(at 0% 100%, rgba(243, 224, 198, 0.35) 0px, transparent 50%),
+    radial-gradient(at 50% 50%, rgba(255, 255, 255, 0.5) 0px, transparent 50%);
+}
+
+.mesh-dark {
+  background-color: #162419;
+  background-image: 
+    radial-gradient(at 0% 0%, rgba(46, 77, 52, 0.6) 0px, transparent 50%),
+    radial-gradient(at 100% 100%, rgba(28, 48, 33, 0.8) 0px, transparent 50%),
+    radial-gradient(at 50% 50%, rgba(18, 31, 22, 0.9) 0px, transparent 60%);
+}
+
+/* Glassmorphism with warm borders */
+.glass-card {
+  background: rgba(255, 255, 255, 0.88);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(220, 214, 198, 0.6);
+}
+
+.glass-card-subtle {
+  background: rgba(250, 246, 238, 0.82);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(214, 206, 187, 0.6);
+}
+
+.glass-card-emerald {
+  background: linear-gradient(135deg, rgba(240, 248, 238, 0.92) 0%, rgba(255, 253, 247, 0.95) 100%);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(135, 175, 131, 0.35);
+}
+
+/* Realistic 3D book perspective & shadows */
+.perspective-1200 {
+  perspective: 1200px;
+}
+
+.book-shadow-3d {
+  box-shadow: 
+    -18px 25px 45px -8px rgba(35, 45, 30, 0.32),
+    -5px 10px 18px -3px rgba(35, 45, 30, 0.18),
+    0 0 0 1px rgba(0, 0, 0, 0.06);
+}
+
+.glow-emerald {
+  box-shadow: 0 12px 36px -8px rgba(44, 98, 56, 0.38);
+}
+
+.glow-amber {
+  box-shadow: 0 12px 36px -8px rgba(217, 119, 6, 0.35);
+}
+
+/* Floating animation */
+@keyframes softFloat {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-8px) rotate(0.5deg);
+  }
+}
+
+.animate-float {
+  animation: softFloat 6s ease-in-out infinite;
+}
